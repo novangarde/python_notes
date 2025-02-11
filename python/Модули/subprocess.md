@@ -10,36 +10,48 @@
 ## Применение в виртуальном окружении
 
 **Выполнить команду:**
-`subprocess.run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
+```Python
+subprocess.run([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
+```
 
 [[sys.executable]] вернет текущий интерпретатор, чтобы не вызвать команду в другом окружении
 -m используется для указания интерпретатору Python, что необходимо запустить модуль как скрипт, то есть, pip
 
 **Получить вывод:**
-`installed_packages = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze']).decode('utf-8')
+```Python
+installed_packages = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze']).decode('utf-8')
+```
 
 **Распечатать:**
-`print(installed_packages)
+```Python
+print(installed_packages)
+```
 
 #### **`subprocess.run()`**
 
 Рекомендуемый способ выполнения команд. Он запускает команду и ожидает её завершения, возвращая объект `CompletedProcess`, который содержит информацию о выполнении:
 
-`import subprocess
-`result = subprocess.run(['ls', '-l'])
-`print(result.returncode)  # Выводит код возврата`
+```Python
+import subprocess
+result = subprocess.run(['ls', '-l'])
+print(result.returncode)  # Выводит код возврата
+```
 
 #### **`subprocess.call()`**
 
 Выполняет команду и возвращает код возврата, но не предоставляет детальную информацию о выполнении:
 
-`return_code = subprocess.call(['ls', '-l'])
+```Python
+return_code = subprocess.call(['ls', '-l'])
+```
 
 #### **`subprocess.Popen()`**
 
 Более низкоуровневый интерфейс, который предоставляет больше контроля над процессами. С его помощью можно запускать процессы асинхронно и управлять их вводом/выводом:
 
-`process = subprocess.Popen(['ls', '-l'], stdout=subprocess.PIPE) output, errors = process.communicate()  # Получаем вывод и ошибки`
+```Python
+process = subprocess.Popen(['ls', '-l'], stdout=subprocess.PIPE) output, errors = process.communicate()  # Получаем вывод и ошибки
+```
 
 #### `subprocess.check_call()
 

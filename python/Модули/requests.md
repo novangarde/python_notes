@@ -39,48 +39,62 @@
 
 ## Отправка GET-запроса
 
-`import requests
+```Python
+import requests
 
-`response = requests.get('https://api.example.com/data')
-`print(response.status_code)  # Код состояния ответа
-`print(response.json())       # Данные в формате JSON
+response = requests.get('https://api.example.com/data')
+print(response.status_code)  # Код состояния ответа
+print(response.json())       # Данные в формате JSON
+```
 
 ## Отправка POST-запроса с данными
 
-`data = {'key1': 'value1', 'key2': 'value2'}
-`response = requests.post('https://api.example.com/submit', data=data)
-`print(response.status_code)
+```Python
+data = {'key1': 'value1', 'key2': 'value2'}
+response = requests.post('https://api.example.com/submit', data=data)
+print(response.status_code)
+```
 
 ## Передача параметров в GET-запросе
 
-`params = {'search': 'python', 'page': 2}
-`response = requests.get('https://api.example.com/search', params=params)
-`print(response.url)  # Полный URL с параметрами
+```Python
+params = {'search': 'python', 'page': 2}
+response = requests.get('https://api.example.com/search', params=params)
+print(response.url)  # Полный URL с параметрами
+```
 
 ## Загрузка файла
 
-`response = requests.get('https://api.example.com/file.jpg')
-`with open('file.jpg', 'wb') as f:
-`    f.write(response.content)
+```Python
+response = requests.get('https://api.example.com/file.jpg')
+with open('file.jpg', 'wb') as f:
+	f.write(response.content)
+```
 
 ## Добавление заголовка в request
 
 Зачастую браузеры отдают 404 на запросы без хедеров, поэтому стоит имитировать реальный браузер, добавляя head в тело запроса.
 
-`url = f"https://finance.yahoo.com/quote/{ticker}/financials?p={ticker}"
+```Python
+url = f"https://finance.yahoo.com/quote/{ticker}/financials?p={ticker}"
 
-`head = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
+head = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
 
-`html = requests.get(url, headers=head)
+html = requests.get(url, headers=head)
+```
 
 ## Читаем response
 
 **Чтобы прочитать ответ от сервера:**
 
-`html = requests.get(url, headers=head)
-`print(html.text)
+```Python
+html = requests.get(url, headers=head)
+print(html.text)
+```
 
 **Чтобы прочитать json():**
 
-`html = requests.get(url, headers=head)
-`print(html.text)
+```Python
+html = requests.get(url, headers=head)
+print(html.text)
+```

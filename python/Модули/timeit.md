@@ -1,14 +1,17 @@
 
 Модуль `timeit` в Python предназначен для измерения времени выполнения небольших фрагментов кода. Он позволяет запускать код несколько раз и вычислять среднее время выполнения, что полезно для оптимизации производительности программ. Чтобы использовать `timeit`, необходимо импортировать его и вызвать метод `timeit()` с переданным кодом, который нужно протестировать. Например:
 
-`import timeit
+```Python
+import timeit
 
-`execution_time = timeit.timeit('your_code_here', number=1000000)
-`print(f"Execution time: {execution_time} seconds")
-
+execution_time = timeit.timeit('your_code_here', number=1000000)
+print(f"Execution time: {execution_time} seconds")
+```
 #### Синтаксис
 
-`timeit.timeit(stmt, setup, timer, number)
+```Python
+timeit.timeit(stmt, setup, timer, number)
+```
 ##### Параметры:
 
 - **stmt**: Строка с кодом, время выполнения которого вы хотите измерить. По умолчанию это пустая строка.
@@ -18,9 +21,10 @@
 
 #### Пример реализации
 
-`emails = ['john@gmail.com', 'james@gmail.com', 'alice@yahoo.com', 'anna@live.com', 'philipp@gmail.com'] * 5
-
- `loop_time = timeit.timeit(f'parse_by_loop({emails})', globals=globals(), number=90000000)
+```Python
+emails = ['john@gmail.com', 'james@gmail.com', 'alice@yahoo.com', 'anna@live.com', 'philipp@gmail.com'] * 5
+loop_time = timeit.timeit(f'parse_by_loop({emails})', globals=globals(), number=90000000)
+```
 
 В качестве кода передаем строку, вызывающую нужную нам функцию.
 
