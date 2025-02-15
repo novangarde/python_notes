@@ -15,20 +15,31 @@ PyTest автоматически обнаруживает тестовые фу
 
 ## Установка
 
-`pip install pytest`
+```Shell
+pip install pytest
+```
 
 ## Запуск
 
 Переходим в директорию с тестами и пишем:
-`pytest`
+
+```Shell
+pytest
+```
 
 Эта команда автоматически найдет все файлы и функции с именами, начинающимися на `test_`, и выполнит их.
 
 Запуск конкретного файла:
-`pytest test_file.py
+
+```Shell
+pytest test_file.py
+```
 
 Или:
-`pytest tests/
+
+```Shell
+pytest tests/
+```
 
 **Получение отчетов**: После выполнения команды вы увидите отчет о выполненных тестах в консоли:
     
@@ -42,37 +53,47 @@ PyTest автоматически обнаруживает тестовые фу
 
 ### Пример 1: Простой тест
 
-`def sum2(x, y):
-	`return x + y
+```Python
+def sum2(x, y):
+	return x + y
 
-`def test_sum2():
-	`assert sum2(10, 7) == 17`
+def test_sum2():
+	assert sum2(10, 7) == 17
+```
 
 ### Пример 2: Тестирование нескольких случаев
 
-`def multiply(a, b):
-	`return a * b
+```Python
+def multiply(a, b):
+	return a * b
 	
-`def test_multiply():
-	`assert multiply(3, 4) == 12
-	`assert multiply(0, 3) == 0
-	`assert multiply(-2, 3) == -6`
+def test_multiply():
+	assert multiply(3, 4) == 12
+	assert multiply(0, 3) == 0
+	assert multiply(-2, 3) == -6
+```
 
 ### Пример 3: Тест на возврат типа данных
 
-`def test_is_it_tuple():
-`    result = main("TSLA", "Cost of Revenue")
-`    assert type(result) == tuple
+```Python
+def test_is_it_tuple():
+	result = main("TSLA", "Cost of Revenue")
+	assert type(result) == tuple
+```
 
 ### Пример 4: Тест на возврат исключения
 
-`def test_wrong_ticker_reaction():
-`    with pytest.raises(Exception) as excinfo:
-`        main("WRNG", "Gross Profit")
-`    assert "Тикер не найден" in str(excinfo.value)
+```Python
+def test_wrong_ticker_reaction():
+	with pytest.raises(Exception) as excinfo:
+		main("WRNG", "Gross Profit")
+	assert "Тикер не найден" in str(excinfo.value)
+```
 
 ### Пример 5: Тест на значение элемента кортежа
 
-`def test_is_it_total_revenue():
-`    result = main("AAPL", "Total Revenue")
-`    assert result[0] == "Total Revenue"
+```Python
+def test_is_it_total_revenue():
+	result = main("AAPL", "Total Revenue")
+	assert result[0] == "Total Revenue"
+```

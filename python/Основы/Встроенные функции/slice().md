@@ -13,25 +13,31 @@
 
 Вы можете использовать `slice()` для извлечения подсписков из [[list|списков]].
 
-`numbers = [1, 2, 3, 4, 5]
-`s = slice(1, 4)  # Создаем объект slice
-`print(numbers[s])  # Вывод: [2, 3, 4]`
+```Python
+numbers = [1, 2, 3, 4, 5]
+s = slice(1, 4)  # Создаем объект slice
+print(numbers[s])  # Вывод: [2, 3, 4]
+```
 
 #### Строки
 
 С помощью `slice()` можно извлекать подстроки из [[str|строк]].
 
-`text = "Hello, World!"
-`s = slice(7, 12)
-`print(text[s])  # Вывод: World
+```Python
+text = "Hello, World!"
+s = slice(7, 12)
+print(text[s])  # Вывод: World
+```
 
 #### Кортежи
 
 `slice()` также работает с [[tuple|кортежами]].
 
-`my_tuple = (1, 2, 3, 4, 5)
-`s = slice(1, 4)
-`print(my_tuple[s])  # Вывод: (2, 3, 4)
+```Python
+my_tuple = (1, 2, 3, 4, 5)
+s = slice(1, 4)
+print(my_tuple[s])  # Вывод: (2, 3, 4)
+```
 
 #### Массивы и другие последовательности
 
@@ -41,10 +47,13 @@
 
 Например, вы можете хранить объект `slice` в переменной и использовать его повторно для разных последовательностей.
 
-`s = slice(0, 10, 2)
+```Python
+s = slice(0, 10, 2)
 
-`my_list = list(range(20))
-`print(my_list[s])  # Вывод: [0, 2, 4, 6, 8]
+my_list = list(range(20))
+print(my_list[s])  # Вывод: [0, 2, 4, 6, 8]
 
-`my_string = "abcdefghij"
-`print(my_string[s])  # Вывод: acegi
+my_string = "abcdefghij"
+print(my_string[s])  # Вывод: acegi
+```
+

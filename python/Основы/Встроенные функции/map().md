@@ -20,9 +20,10 @@
 
 #### Пример
 
-`def execute_by_map(emails):
-
+```Python
+def execute_by_map(emails):
     return list(map(lambda x: x if x.endswith('@gmail.com') else None, emails))
+```
 
 Здесь используется анонимная функция `lambda`, мы придумываем переменную для объекта каждой итерации, возвращаемой из emails, а потом проверяем его на соответствие требованию `x.endswith('@gmail.com')`.
 

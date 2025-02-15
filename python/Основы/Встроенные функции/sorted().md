@@ -12,34 +12,52 @@
 ## Примеры:
 
 1. Сортировка чисел
-`numbers = [5, 2, 9, 1]
-`sorted_numbers = sorted(numbers)
-`print(sorted_numbers)  # Вывод: [1, 2, 5, 9]
+
+```Python
+numbers = [5, 2, 9, 1]
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)  # Вывод: [1, 2, 5, 9]
+```
 
 2. Сортировка строк
-`words = ['banana', 'apple', 'cherry']
-`sorted_words = sorted(words)
-`print(sorted_words)  # Вывод: ['apple', 'banana', 'cherry']
+
+```Python
+words = ['banana', 'apple', 'cherry']
+sorted_words = sorted(words)
+print(sorted_words)  # Вывод: ['apple', 'banana', 'cherry']
+```
 
 3. Сортировка с использованием `key`
-`words = ['one', 'two', 'three', 'four']
-`sorted_by_length = sorted(words, key=len)
-`print(sorted_by_length)  # Вывод: ['one', 'two', 'four', 'three']
+
+```Python
+words = ['one', 'two', 'three', 'four']
+sorted_by_length = sorted(words, key=len)
+print(sorted_by_length)  # Вывод: ['one', 'two', 'four', 'three']
+```
 
 4. Сортировка в порядке убывания
-`numbers = [5, 2, 9, 1]
-`sorted_numbers_desc = sorted(numbers, reverse=True)
-`print(sorted_numbers_desc)  # Вывод: [9, 5, 2, 1]
+
+```Python
+numbers = [5, 2, 9, 1]
+sorted_numbers_desc = sorted(numbers, reverse=True)
+print(sorted_numbers_desc)  # Вывод: [9, 5, 2, 1]
+```
 
 5. Сортировка с использованием кортежей
-`students = [('Alice', 25), ('Bob', 20), ('Charlie', 30)]
-`sorted_students = sorted(students, key=lambda x: x[1])  # Сортировка по возрасту
-`print(sorted_students)  # Вывод: [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
+
+```Python
+students = [('Alice', 25), ('Bob', 20), ('Charlie', 30)]
+sorted_students = sorted(students, key=lambda x: x[1])  # Сортировка по возрасту
+print(sorted_students)  # Вывод: [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
+```
 
 6. Сортировка кортежей по двум параметрам:
-`students = [('Alice', 25), ('Bob', 20), ('Charlie', 20)]
-`sorted_students = sorted(students, key=lambda x: (x[1], -x[0]))
-`print(sorted_students)  # Вывод: [('Charlie', 20), ('Bob', 20), ('Alice', 25)]
+
+```Python
+students = [('Alice', 25), ('Bob', 20), ('Charlie', 20)]
+sorted_students = sorted(students, key=lambda x: (x[1], -x[0]))
+print(sorted_students)  # Вывод: [('Charlie', 20), ('Bob', 20), ('Alice', 25)]
+```
 
 *Примечание: сначала отсортируем по возрасту, потом, когда столкнемся с тем, что у Charlie и Bob одинаковый возраст, отсортируем по имени. Так как добавили "-" и получили -x[0], сортировка будет обратной*.
 
