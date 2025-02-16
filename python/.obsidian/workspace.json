@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python.md",
+                "file": "Основы/Модули/sqlite3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "sqlite3"
             }
           }
         ]
@@ -170,6 +170,17 @@
   },
   "active": "853f2d00944ec5dc",
   "lastOpenFiles": [
+    "SQL/SQLite.md",
+    "SQL/Общий синтаксис.md",
+    "Python.md",
+    "Data Science/Pandas/pd.SQL.md",
+    "Основы/Модули/sqlite3.md",
+    "Основы/Модули/Модули.md",
+    "SQL",
+    "Data Science/Pandas/Pandas.md",
+    "Инструменты/Virtual Environment.md",
+    "Инструменты/PyTest.md",
+    "Инструменты/cProfile.md",
     "Основы/Особые операторы, конструкции/not.md",
     "Основы/Особые операторы, конструкции/yield.md",
     "Основы/Особые операторы, конструкции/match-case.md",
@@ -186,16 +197,6 @@
     "Основы/ООП/Классы.md",
     "Основы/ООП/Вложенные классы.md",
     "Основы/ООП/__init__.md",
-    "Основы/Модули/functools.md",
-    "Основы/Модули/datetime.md",
-    "Основы/Модули/collections.md",
-    "Основы/Модули/bs4.md",
-    "Основы/Модули/Модули.md",
-    "Основы/Встроенные функции/try-except.md",
-    "Основы/Встроенные функции/sorted().md",
-    "Основы/Встроенные функции/slice().md",
-    "Основы/Встроенные функции/round().md",
-    "Основы/Встроенные функции/range().md",
     "Основы",
     "Инструменты",
     "Data Science/Pandas",
@@ -206,7 +207,6 @@
     "Основы/Типы данных/tuple",
     "Основы/Типы данных/str",
     "Основы/Типы данных/list",
-    "Основы/Типы данных/dict",
-    "Основы/Типы данных/float"
+    "Основы/Типы данных/dict"
   ]
 }
