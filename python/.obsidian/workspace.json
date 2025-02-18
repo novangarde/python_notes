@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python.md",
+                "file": "Основы/Модули/sqlite3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Python"
+              "title": "Обратные ссылки для sqlite3"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python.md",
+                "file": "Основы/Модули/sqlite3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Python"
+              "title": "Исходящие ссылки из sqlite3"
             }
           },
           {
@@ -151,7 +151,8 @@
               "title": "Структура Python"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,11 +171,12 @@
   },
   "active": "853f2d00944ec5dc",
   "lastOpenFiles": [
+    "Data Science/Pandas/pd.Агеграция.md",
     "SQL/SQLite.md",
+    "Основы/Модули/sqlite3.md",
     "SQL/Общий синтаксис.md",
     "Python.md",
     "Data Science/Pandas/pd.SQL.md",
-    "Основы/Модули/sqlite3.md",
     "Основы/Модули/Модули.md",
     "SQL",
     "Data Science/Pandas/Pandas.md",
@@ -196,7 +198,6 @@
     "Основы/ООП/Наследование класса.md",
     "Основы/ООП/Классы.md",
     "Основы/ООП/Вложенные классы.md",
-    "Основы/ООП/__init__.md",
     "Основы",
     "Инструменты",
     "Data Science/Pandas",
