@@ -18,6 +18,7 @@ df['day'] = df['datetime'].dt.day
 df['hour'] = df['datetime'].dt.hour
 df['minute'] = df['datetime'].dt.minute
 df['second'] = df['datetime'].dt.second
+df['datetime'] = df['datetime'].dt.date # дата, без времени и микросекунд
 ```
 
 ### df.astype()
