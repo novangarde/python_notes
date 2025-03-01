@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4d6ea8d48414e03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML/Линейная регрессия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Линейная регрессия"
-            }
-          },
-          {
-            "id": "94fb1c820169f115",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML/Линейная регрессия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Линейная регрессия"
-            }
-          },
-          {
             "id": "b165710fe4bb67fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Линейная регрессия.md",
+                "file": "Data Science/Pandas/pd.Статистика.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Линейная регрессия"
-            }
-          },
-          {
-            "id": "41c121f1eee276bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Python"
+              "title": "pd.Статистика"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bins",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -214,39 +172,40 @@
   },
   "active": "b165710fe4bb67fd",
   "lastOpenFiles": [
-    "Понимание.md",
-    "ML/Линейная регрессия.md",
+    "Data Science/Pandas/pd.plot().md",
+    "().md",
+    "Data Science/Pandas/Pandas.md",
+    "Data Science/Pandas/pd.Агеграция.md",
+    "Data Science/Pandas/pd.Арифметические.md",
+    "Data Science/Pandas/pd.DataFrames.md",
+    "Data Science/Pandas/pd.Фильтрация.md",
+    "Data Science/Pandas/pd.Файлы.md",
+    "Data Science/Pandas/pd.Типы данных.md",
+    "Data Science/Pandas/pd.Статистика.md",
+    "Data Science/Pandas/pd.Сортировка.md",
+    "Data Science/Pandas/pd.Построчная обработка.md",
+    "Data Science/Pandas/pd.Колонки.md",
+    "SQL/SQLite.md",
+    "SQL/Общий синтаксис.md",
+    "Data Science/Jupiter Notebook.md",
+    "Инструменты/Virtual Environment.md",
+    "Data Science/Графики/matplotlib.md",
+    "Data Science/Графики",
+    "Python.md",
     "ML/ML.md",
+    "ML/Линейная регрессия.md",
+    "Понимание.md",
     "images/Pasted image 20250222212241.png",
     "images/Pasted image 20250222213349.png",
     "Основы/Модули/Модули.md",
     "ML",
-    "Python.md",
     "Основы/Типы данных/dict/dict.md",
     "Основы/Типы данных/Типы данных.md",
-    "Data Science/Jupiter Notebook.md",
     "Основы/Встроенные функции/Встроенные функции.md",
-    "Основы/Встроенные функции/any().md",
-    "Основы/Встроенные функции/all().md",
-    "Основы/Встроенные функции/try-except.md",
-    "Инструменты/cProfile.md",
-    "Инструменты/PyTest.md",
-    "Инструменты/Virtual Environment.md",
     "images/Pasted image 20250220153830.png",
     "images/Pasted image 20250220153621.png",
     "images",
-    "Data Science/Pandas/pd.Графики.md",
-    "Data Science/Pandas/pd.Колонки.md",
-    "Data Science/Pandas/pd.DataFrames.md",
-    "Data Science/Pandas/Pandas.md",
-    "Data Science/Pandas/pd.Типы данных.md",
-    "Основы/Модули/sqlite3.md",
-    "Data Science/Pandas/pd.Агеграция.md",
-    "SQL/SQLite.md",
-    "SQL/Общий синтаксис.md",
-    "Data Science/Pandas/pd.SQL.md",
     "SQL",
-    "Основы/Особые операторы, конструкции/not.md",
     "Основы",
     "Инструменты",
     "Data Science/Pandas",
@@ -254,7 +213,6 @@
     "Без названия.canvas",
     "Data Science",
     "Основы/Типы данных/set",
-    "Основы/Типы данных/tuple",
-    "Основы/Типы данных/str"
+    "Основы/Типы данных/tuple"
   ]
 }
