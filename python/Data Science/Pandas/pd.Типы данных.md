@@ -12,7 +12,7 @@ df['datetime'] = pd.to_datetime(df['datetime'])
 После преобразования мы можем создать в объекте новые столбцы, присваивая им значение из вложенного объекта dt и соответствующего атрибута:
 
 ```Python
-df['year'] = df['datetime'].dt.year
+df['year'] = df['datetime'].dt.year # да, без скобок, это атрибут
 df['month'] = df['datetime'].dt.month
 df['day'] = df['datetime'].dt.day
 df['hour'] = df['datetime'].dt.hour

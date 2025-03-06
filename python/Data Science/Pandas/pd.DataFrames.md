@@ -1,4 +1,70 @@
+import pandas as pd
 
+import sqlite3
+
+import matplotlib.pyplot as plt
+
+  
+
+con = sqlite3.connect('../data/checking-logs.sqlite')
+
+  
+
+ab = pd.read_csv('../data/ab-test.csv')
+
+ab = ab.loc[ab['group'] == 'test']
+
+ab = ab.groupby('uid').mean('diff').reset_index()
+
+# print(ab)
+
+  
+
+query = """
+
+SELECT uid, COUNT(*) AS commits
+
+FROM checker
+
+WHERE labname != 'project1' AND uid LIKE 'user_%'
+
+GROUP BY uid
+
+"""
+
+checker = pd.read_sql(query, con)
+
+# print(checker.sort_values('uid'))
+
+  
+
+query = """
+
+SELECT uid, COUNT(*) AS pageviews
+
+FROM pageviews
+
+WHERE uid LIKE 'user_%'
+
+GROUP BY uid
+
+"""
+
+pageviews = pd.read_sql(query, con)
+
+# print(pageviews.sort_values('uid'))
+
+  
+
+combine = pd.merge(ab, pageviews, how='left', on='uid')
+
+combine = pd.merge(combine, checker, how='left', on='uid')
+
+print(combine)
+
+  
+
+con.close()
 **DataFrame** — это одна из основных структур данных в библиотеке pandas, предназначенная для работы с табличными данными. Его можно представить как двумерную таблицу, аналогичную таблицам в базах данных или листам в Excel.
 
 ```Python
