@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science/Pandas/pd.plot().md",
+                "file": "Data Science/ML/ML.Теория.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pd.plot()"
+              "title": "ML.Теория"
+            }
+          }
+        ]
+      },
+      {
+        "id": "819738223e73e388",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c92cd31bfe1b48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Science/Pandas/pd.Графики.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pd.Графики"
             }
           }
         ]
@@ -53,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bins",
+                "query": "plot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,36 +191,37 @@
   },
   "active": "b165710fe4bb67fd",
   "lastOpenFiles": [
-    "Data Science/Pandas/pd.Статистика.md",
-    "Data Science/Pandas/pd.plot().md",
-    "().md",
-    "Data Science/Pandas/Pandas.md",
-    "Data Science/Pandas/pd.Агеграция.md",
-    "Data Science/Pandas/pd.Арифметические.md",
-    "Data Science/Pandas/pd.DataFrames.md",
-    "Data Science/Pandas/pd.Фильтрация.md",
-    "Data Science/Pandas/pd.Файлы.md",
-    "Data Science/Pandas/pd.Типы данных.md",
-    "Data Science/Pandas/pd.Сортировка.md",
-    "Data Science/Pandas/pd.Построчная обработка.md",
-    "Data Science/Pandas/pd.Колонки.md",
-    "SQL/SQLite.md",
-    "SQL/Общий синтаксис.md",
-    "Data Science/Jupiter Notebook.md",
-    "Инструменты/Virtual Environment.md",
-    "Data Science/Графики/matplotlib.md",
-    "Data Science/Графики",
+    "Data Science/ML/Линейная регрессия.md",
+    "Data Science/ML/Логистическая регрессия.md",
+    "Data Science/ML/ML.Теория.md",
+    "Data Science/Data Science.md",
+    "Data Science/ML/Hierarchical Clustering.md",
+    "Data Science/ML/DBSCAN.md",
     "Python.md",
+    "pd.plot().md",
+    "Data Science/Графики/Matplotlib.md",
+    "Data Science/Tools/NumPy.md",
+    "Data Science/Графики",
+    "Data Science/Tools/Jupyter Notebook.md",
+    "Data Science/Tools",
+    "Data Science/Pandas/pd.Графики.md",
+    "Data Science/ML/KMeans.md",
+    "Data Science/ML/Random Forest.md",
+    "Data Science/ML/Decision tree.md",
+    "Data Science/ML/SVC.md",
     "ML/ML.md",
-    "ML/Линейная регрессия.md",
+    "Data Science/Pandas/Pandas.md",
+    "Data Science/Графики/Plotly.md",
+    "Data Science/Графики/Seaborn.md",
     "Понимание.md",
     "images/Pasted image 20250222212241.png",
     "images/Pasted image 20250222213349.png",
     "Основы/Модули/Модули.md",
-    "ML",
+    "Data Science/ML",
     "Основы/Типы данных/dict/dict.md",
     "Основы/Типы данных/Типы данных.md",
     "Основы/Встроенные функции/Встроенные функции.md",
+    "Основы/Встроенные функции/any().md",
     "images/Pasted image 20250220153830.png",
     "images/Pasted image 20250220153621.png",
     "images",
@@ -211,7 +232,6 @@
     "obsidian.png",
     "Без названия.canvas",
     "Data Science",
-    "Основы/Типы данных/set",
-    "Основы/Типы данных/tuple"
+    "Основы/Типы данных/set"
   ]
 }
